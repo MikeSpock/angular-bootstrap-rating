@@ -1,0 +1,41 @@
+<!doctype html >
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello, this is reevioRating's demo</title>
+    <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="src/reevioRating.css" type="text/css">    
+  </head>
+  <body style="padding:2em" ng-app="reevioDemoApp" ng-init="myAngularVariable=3">
+    <h1>Hello, this is reevioRating's demo <i class="glyphicon glyphicon-heart"></i></h1>
+    <h1><span reevio-rating="myAngularVariable" reevio-rating-length="5"></span></h1>
+    
+    <h2><span reevio-rating="myAngularVariable" reevio-rating-length="5"></span></h2>
+    <h3><span reevio-rating="myAngularVariable" reevio-rating-length="5"></span></h3>
+    <h4><span reevio-rating="myAngularVariable" reevio-rating-length="5"></span></h4>
+    <p><span reevio-rating="myAngularVariable" reevio-rating-length="5"></span></p>
+    <p class="lead">Rating value: {{myAngularVariable}}</p>
+    <p>Edit color, etc in the css class</p>
+    <p>You can attach behaviour like:</p>
+    <div class="alert alert-{{(myAngularVariable<3)?'danger':'success'}}">
+      <span ng-if="myAngularVariable==1">Too low!</span>
+      <span ng-if="myAngularVariable==2">A bit better</span>
+      <span ng-if="myAngularVariable==3">Medium</span>
+      <span ng-if="myAngularVariable==4">Nice</span>
+      <span ng-if="myAngularVariable==5">Attaboy!</span>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+  <script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+  
+  
+  <script src="src/reevioRating.js"></script>  
+</html>
+ 
+ 
+ 
