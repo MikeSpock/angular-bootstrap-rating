@@ -10,7 +10,7 @@
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="src/reevioRating.css" type="text/css">    
   </head>
-  <body style="padding:2em" ng-app="reevioDemoApp" ng-init="myAngularVariable=3">
+  <body style="padding:0 2em" ng-app="reevioDemoApp" ng-init="myAngularVariable=3">
     <h1>Hello, this is reevioRating's demo <i class="glyphicon glyphicon-heart text-danger"></i></h1>
     <h1><span reevio-rating="myAngularVariable" reevio-rating-length="5"></span></h1>
     
@@ -20,10 +20,10 @@
     <p><span reevio-rating="myAngularVariable" reevio-rating-length="5"></span></p>
     <p class="lead">Rating value: {{myAngularVariable}}</p>
     <p>Edit color, etc in the css class</p>
-    <p>You can attach behaviour like:</p>
     <div class="alert alert-{{(myAngularVariable<3)?'danger':'success'}}">
+      <b>You can attach various behaviour like:</b><br>
       <span ng-if="myAngularVariable==1">Too low!</span>
-      <span ng-if="myAngularVariable==2">A bit better</span>
+      <span ng-if="myAngularVariable==2">A bit low</span>
       <span ng-if="myAngularVariable==3">Medium</span>
       <span ng-if="myAngularVariable==4">Nice</span>
       <span ng-if="myAngularVariable==5">Attaboy!</span>
