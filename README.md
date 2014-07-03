@@ -18,4 +18,7 @@ The source is so small, its incredible, three cheers for Angular :)
 You can use it dynamically too:
 ```<span reevio-rating="myAngularVariable" reevio-rating-length="5"></span>```
 
+####Usage:
+You can costumize colors, etc in the css. It's all there
+
 
