@@ -11,14 +11,21 @@ All it does is give you a star rating functionality.
 
 ####Usage:
 Here we go
-
-```<span reevio-rating="3" reevio-rating-length="5"></span>```
+```html
+<span reevio-rating="3" reevio-rating-length="5"></span>
+```
 The source is so small, its incredible, three cheers for Angular :)
 
-You can use it dynamically too:
-```<span reevio-rating="myAngularVariable" reevio-rating-length="5"></span>```
+You can use it dynamically, it has two-way data binding, so its basically like `ng-model`:
+```html
+<span reevio-rating="myAngularVariable" reevio-rating-length="5"></span>
+```
 
-####Usage:
+`reevio-rating`: sets the value (and gets it via 2-way data binding)
+`reevio-rating-length`: how many symbols do you want to see
+
+
+####Customization:
 You can costumize colors, etc in the css. It's all there
 
 
